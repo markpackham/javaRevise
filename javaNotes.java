@@ -442,3 +442,78 @@ public class Conditionals {
 
 	}
 }
+
+
+//&& And
+public class And {
+	public static void main(String[] args) {
+
+		System.out.println(1 < 2 && 3 < 4);
+	
+	}
+}
+
+//|| Or
+public class Or {
+	public static void main(String[] args) {
+
+		System.out.println(1 < 2 || 3 < 4);
+		
+	}
+}
+
+//Not (inverts true & false)
+public class Not {
+	public static void main(String[] args) {
+
+		System.out.println(!false);
+		System.out.println( !(5>=1) );
+		
+	}
+}
+
+
+//Ternary operator
+public class Ternary {
+	public static void main(String[] args) {
+		
+		int fuelLevel = 3;
+
+		char canDrive = (fuelLevel > 0) ? 'Y' : 'N';
+		System.out.println(canDrive);
+
+	}
+}
+
+//Switch statement
+public class Switch {
+	public static void main(String[] args) {
+		
+		char penaltyKick = 'L';
+
+		switch (penaltyKick) {
+
+			case 'L': System.out.println("Messi shoots to the left and scores!");
+								break; 
+			case 'R': System.out.println("Messi shoots to the right and misses the goal!");
+								break;
+			case 'C': System.out.println("Messi shoots down the center, but the keeper blocks it!");
+								break;
+			default:
+				System.out.println("Messi is in position...");
+
+		}
+
+	}
+}
+
+/*
+Boolean Operators: &&, ||, and ! are used to build Boolean expressions and have a defined order of operations
+
+Statements: if, if/else, and if/else if/else statements are used to conditionally execute blocks of code
+
+Ternary Conditional: a shortened version of an if/else statement that returns a value based on the value of a Boolean expression
+
+Switch: allows us to check equality of a variable or expression with a value that does not need to be a Boolean
+*/
+
